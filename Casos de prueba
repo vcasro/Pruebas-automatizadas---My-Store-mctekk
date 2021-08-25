@@ -1,0 +1,162 @@
+// Estas pruebas fueron generadas utilizando Katalon Studio
+
+// Caso de prueba Registro 
+
+WebUI.openBrowser('Firefox')
+
+WebUI.navigateToUrl('http://automationpractice.com/index.php')
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email_create'), 'veronicapruebatest@gmail.com')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Create an account'))
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/input_Mrs_id_gender'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__customer_firstname'), 'Veronica')
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__customer_lastname'), 'Rodriguez')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/input__email'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login - My Store/input__passwd'), '/Una4UoHXJ8qCZyCSpDD6w==')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Login - My Store/select_-12345678910111213141516171819202122_51e29d'), 
+    '1', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Login - My Store/select_-JanuaryFebruaryMarchAprilMayJuneJul_702766'), 
+    '1', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Login - My Store/select_-20212020201920182017201620152014201_28b437'), 
+    '2021', true)
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__address1'), '1235 NW av ')
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__city'), 'boston')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Login - My Store/select_-AlabamaAlaskaArizonaArkansasCalifor_c52141'), 
+    '32', true)
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__postcode'), '30001')
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__phone_mobile'), '8096547894')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/input__alias'))
+
+WebUI.doubleClick(findTestObject('Object Repository/Page_Login - My Store/input__alias'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__alias'), '1789 nw lst')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Register'))
+
+
+-----------------------------------------------------------------------------------------------------------------
+// Caso de prueba inicio de sesión
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://automationpractice.com/index.php')
+
+WebUI.click(findTestObject('Object Repository/Page_My Store/a_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email'), 'veronicaprueba@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login - My Store/input_Password_passwd'), 'tRBTVFDENWKpemDw2MKTHg==')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Sign in'))
+----------------------------------------------------------------------------------
+
+// Caso de prueba buscar Elemento en Serch Bar
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://automationpractice.com/index.php')
+
+WebUI.click(findTestObject('Object Repository/Page_My Store/a_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email'), 'veronicacastror@outlook.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login - My Store/input_Password_passwd'), 'RigbBhfdqODKcAsiUrg+1Q==')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_My account - My Store/input_Call us now_search_query'), 'dress')
+
+WebUI.click(findTestObject('Object Repository/Page_My account - My Store/button_Search'))
+----------------------------------------------------------------------------------
+
+// Caso de prueba agregar items en el carrito de compras
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://automationpractice.com/index.php')
+
+WebUI.click(findTestObject('Object Repository/Page_My Store/a_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email'), 'veronicacastror@outlook.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login - My Store/input_Password_passwd'), 'RigbBhfdqODKcAsiUrg+1Q==')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_My account - My Store/input_Call us now_search_query'), 'dress')
+
+WebUI.click(findTestObject('Object Repository/Page_My account - My Store/button_Search'))
+
+WebUI.click(findTestObject('Object Repository/Page_Search - My Store/span_Add to cart'))
+
+WebUI.click(findTestObject('Object Repository/Page_Search - My Store/span_Continue shopping'))
+
+WebUI.click(findTestObject('Object Repository/Page_Search - My Store/span_Add to cart'))
+-------------------------------------------------------------------------------------
+
+// Pagar items agregados al carrito
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://automationpractice.com/index.php')
+
+WebUI.click(findTestObject('Object Repository/Page_My Store/a_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email'), 'veronicaprueba@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login - My Store/input_Password_passwd'), 'tRBTVFDENWKpemDw2MKTHg==')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Sign in'))
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://automationpractice.com/index.php')
+
+WebUI.click(findTestObject('Object Repository/Page_My Store/a_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email'), 'veronicacastror@outlook.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login - My Store/input_Password_passwd'), 'RigbBhfdqODKcAsiUrg+1Q==')
+
+WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_My account - My Store/input_Call us now_search_query'), 'dress')
+
+WebUI.click(findTestObject('Object Repository/Page_My account - My Store/button_Search'))
+
+WebUI.click(findTestObject('Object Repository/Page_Search - My Store/span_Add to cart'))
+
+WebUI.click(findTestObject('Object Repository/Page_Search - My Store/span_Continue shopping'))
+
+WebUI.click(findTestObject('Object Repository/Page_Search - My Store/span_Add to cart'))
+
+WebUI.click(findTestObject('Object Repository/Page_Search - My Store/span_Proceed to checkout'))
+
+WebUI.click(findTestObject('Object Repository/Page_Order - My Store/span_Proceed to checkout'))
+
+WebUI.click(findTestObject('Object Repository/Page_Order - My Store/span_Proceed to checkout'))
+
+WebUI.click(findTestObject('Object Repository/Page_Order - My Store/input_2.00_cgv'))
+
+WebUI.click(findTestObject('Object Repository/Page_Order - My Store/span_Proceed to checkout_1'))
+
+WebUI.click(findTestObject('Object Repository/Page_Order - My Store/a_Pay by bank wire (order processing will b_e7efad'))
+
+WebUI.click(findTestObject('Object Repository/Page_My Store/span_I confirm my order'))
+
+----------------------------------------------------------------------------------
